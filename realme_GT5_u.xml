@@ -22,9 +22,16 @@
   <project remote="clo-la" name="kernel_platform/external/stardoc" path="kernel_platform/external/stardoc" revision="d8a0631cb67f57ab54c7939e9c052bca8a78fc2a" upstream="refs/heads/ks-kernel.lnx.2.0.r1-rel"/>
   <project remote="clo-la" name="kernel_platform/prebuilts/bazel/linux-x86_64" path="kernel_platform/prebuilts/bazel/linux-x86_64" revision="c0955edda06e82a14b37a23b68d0811d7cd16bb8" upstream="refs/heads/ks-kernel.lnx.2.0.r1-rel"/>
   <project remote="clo-la" name="kernel_platform/prebuilts/build-tools" path="kernel_platform/prebuilts/build-tools" revision="fe528f8d0a32bde2ae487801cbab4e05de91f218" upstream="refs/heads/ks-kernel.lnx.2.0.r1-rel"/>
+    <linkfile dest="kernel_platform/build/prebuilts/build-tools" src="."/>
+  </project>
+  <project remote="clo-la" name="kernel_platform/prebuilts/clang-tools" path="kernel_platform/prebuilts/clang-tools" revision="0613fc5443d035335a9541994607bacae03750f2" upstream="refs/heads/ks-kernel.lnx.3.0.r1-rel" clone-depth="1">
+    <linkfile dest="kernel_platform/build/prebuilts/clang-tools" src="."/>
+  </project>
   <project remote="clo-la" name="kernel_platform/prebuilts/jdk/jdk11" path="kernel_platform/prebuilts/jdk/jdk11" revision="30b304c89fb78d9d77ed2c016df44acea2232363" upstream="refs/heads/ks-kernel.lnx.2.0.r1-rel"/>
   <project remote="clo-la" name="kernel_platform/system/tools/mkbootimg" path="kernel_platform/tools/mkbootimg" revision="db9f3716c72d7612fc507b89d1fc3876f061350e" upstream="refs/heads/ks-kernel.lnx.2.0.r1-rel"/>
   <project remote="clo-la" name="kernel_platform/toolchain/prebuilts/ndk/r23" path="kernel_platform/prebuilts/ndk-r23" revision="93532f3052c14fbb337ff57d5732128dc7481ee6" upstream="refs/heads/ks-kernel.lnx.2.0.r1-rel"/>
   <project remote="clo-la" name="kernelplatform/prebuilts-master/clang/host/linux-x86" path="kernel_platform/prebuilts/clang/host/linux-x86" revision="c420e3ab93e51a2f2ab4f8e8b517463c34a7e8bd" upstream="refs/heads/ks-kernel.lnx.2.0.r1-rel"/>
   <project remote="clo-la" name="kernelplatform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" path="kernel_platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" revision="58f2f7c11b5309aa4d15079b398852670b5baf7b" upstream="refs/heads/ks-kernel.lnx.2.0.r1-rel"/>
+    <linkfile dest="kernel_platform/build/build-tools/sysroot" src="sysroot"/>
+  </project>
 </manifest>
